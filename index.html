@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N Clock - N値対応カスタム時計 | 擬似タイムマシン PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="description" content="N Clockは、N値（時間の速さ）を調節できるカスタム時計・ストップウォッチPWAです。N値を大きくして未来への擬似タイムトラベルを体験したり、N値を小さくして時間を「貯金」できます。">
+
+</head>
+<body>
+
+    <div class="n-clock-app">
+        <div id="content-area" class="content-area">
+            </div>
+
+        <nav class="tab-bar">
+            <button id="nav-clock" class="tab-item active">
+                <span class="label">時計</span>
+            </button>
+            <button id="nav-stopwatch" class="tab-item">
+                <span class="label">ストップウォッチ</span>
+            </button>
+            <button id="nav-alarm" class="tab-item">
+                <span class="label">アラーム</span>
+            </button>
+            <button id="nav-settings" class="tab-item">
+                <span class="label">設定</span>
+            </button>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
